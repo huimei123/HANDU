@@ -1,0 +1,36 @@
+body,ul,li,p,h1,h2,h3,h4,table,tr,td,a,img{
+	margin:0;padding:0;
+}
+body{
+	font-size:12px;
+}
+ul li{
+	list-style:none;
+}
+img{
+	border:0;
+	display:block;
+}
+input{
+	outline:none;
+	border:0
+}
+ul{
+	li{
+		list-style:none;
+	}
+}
+a{
+	text-decoration:none;
+}
+.over{
+	overflow:hidden;
+}
+.fr{
+	float:right;
+}
+.fl{
+	float:left;
+}
+
+
