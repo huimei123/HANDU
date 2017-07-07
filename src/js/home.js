@@ -1,5 +1,5 @@
 require(['config'],function(){
-	require(['jquery'],function(){
-		console.log('首页');
-	})
-})
+	require(['jquery','hmCarousel'],function($){
+		
+	});
+});

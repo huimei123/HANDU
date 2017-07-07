@@ -1,5 +1,9 @@
 require.config({
-	path:{
-		jquery:'./lib/jquery-3.1.1.js',
+	paths:{
+		jquery:'../lib/jquery-3.1.1',
+		hmCarousel:'../lib/hmCarousel/jquery.hmCarousel',
+	},
+	shim:{
+		hmCarousel:['jquery'],
 	}
 })

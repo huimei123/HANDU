@@ -1,0 +1,30 @@
+require(['config'],function(){
+	require(['jquery','hmCarousel'],function($){
+			$('.banner').hmCarousel({
+				imgs:['../img/banner1.jpg','../img/banner2.jpg','../img/banner3.jpg'],
+				type:'fade',
+				small:false,
+				buttons:false,
+				autoplay:true,
+				page:true
+			});
+			$('.menber').on('mouseover',function(){
+				$('.hdshow').show();
+			}).on('mouseout',function(){
+				$('.hdshow').hide();
+			});
+			$('.message').on('mouseover',function(){
+				$('.message_show').show();
+			}).on('mouseout',function(){
+				$('.message_show').hide();
+			});
+			$('.siteMap').on('mouseover',function(){
+				$('.handuBox').show();
+			})
+			$('.handuBox').on('mouseout',function(){
+				$('.handuBox').hide();
+			})
+
+
+	});
+});
