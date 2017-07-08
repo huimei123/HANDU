@@ -11,6 +11,24 @@
 	<script src="../lib/jquery-3.1.1.js"></script>
 	<script src="../js/require.js" data-main="../js/base"></script>
 	
+	<script>
+		jQuery(($)=>{
+			$('.tabs').on('mouseover',function(){
+				var index = $(this).index();
+				$(this).addClass('on').siblings().removeClass('on');
+				$('.flower_item').hide();
+				$('.flower_item').eq(index).show();
+			});
+
+			//新品轮播
+			$('.newsList li').on('mouseenter',function(){
+				var index = $(this).index();
+				$(this).addClass('onb').siblings().removeClass('onb');
+				$('.cloth').hide();
+				$('.cloth').eq(index).fadeIn('fast');
+			});
+		});
+	</script>
 </head>
 <body>
 	<!-- 顶部 -->
@@ -254,6 +272,318 @@
 			<li></li>
 		</ul>
 	</div>
+		
+	<!-- 公告 -->
+	<div class="warn">
+		<h1>
+			<a href="">公告：警惕不法分子冒充韩都衣舍进行行骗！查看详情</a>
+		</h1>
+	</div>
+	
+	<!-- 品牌 -->
+	<div class="hd_zpp over">
+		<div class="dh_zppleft fl">
+			<h2>互联网品牌生态运营集团</h2>
+			<a class="divhuan">换一批</a>
+			<div class="fresh">
+				<img src="../img/bt.png" />
+			</div>
+			<div class="main">
+				<div class="leftSide block" style="display:block">
+					<ul class="fl">
+						<li><a href=""><img src="../img/1.png" ></a></li>
+						<li><a href=""><img src="../img/2.png" ></a></li>
+						<li><a href=""><img src="../img/3.png" ></a></li>
+						<li><a href=""><img src="../img/4.png" ></a></li>
+						<li><a href=""><img src="../img/5.png" ></a></li>
+						<li><a href=""><img src="../img/6.png" ></a></li>
+						<li><a href=""><img src="../img/7.png" ></a></li>
+						<li><a href=""><img src="../img/8.png" ></a></li>
+						<li><a href=""><img src="../img/9.png" ></a></li>
+						<li><a href=""><img src="../img/10.png" ></a></li>
+						<li><a href=""><img src="../img/11.png" ></a></li>
+						<li><a href=""><img src="../img/12.png" ></a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
 
+		<div class="dh_zppright fr">
+			<div class="con">
+				<div class="tabs">韩都动态</div>
+				<div class="tabs on">明星家族</div>
+				<div class="tabs">媒体报道</div>
+				<div class="tabs">无穷花开</div>
+			</div>
+
+			<div class="flower_list">
+				<div class="flower_item" style="display: none">
+					<div class="one fl">
+						<h2>
+							<img src="../img/230_1.jpg" />
+							<span>韩都衣舍上市获批！成互联网服饰品牌第一股!</span>
+						</h2>
+						<ul>
+	                        <li><a href="http://www.handu.com/news/details/20170.html" target="_blank">韩都衣舍签约亚洲女神朴信惠</a></li>
+	                        <li><a href="http://www.handu.com/news/details/20172.html" target="_blank">签约朴信惠，韩都衣舍将要做什么？</a></li>
+	                        <li><a href="http://www.handu.com/news/details/18671.html" target="_blank">中韩首届电商大会召开 韩都衣舍受邀</a></li>
+	                    </ul>
+					</div>
+					<div class="one fr">
+						<h2>
+							<img src="../img/230_2.jpg" />
+							<span>同心逐梦·志在巅峰</span>
+						</h2>
+						<ul>
+	                        <li><a href="http://www.handu.com/news/details/15446.html" target="_blank">韩都衣舍旗下男装AMH摘得双11淘品牌冠军</a></li>
+	                        <li><a href="http://www.handu.com/news/details/13244.html" target="_blank">韩都衣舍多级跳 淘品牌到孵化器</a></li>
+	                    </ul>
+					</div>
+				</div>
+
+				<div class="flower_item">
+					<div class="two fl">
+						<h2>
+							<a href="">
+								<img src="../img/qq.jpg">
+							</a>
+						</h2>
+						<ul>
+	                        <li><span><a href="http://www.handu.com/news/details/20174.html" target="_blank">[详细内容]</a></span><a href="http://www.handu.com/news/details/20174.html" target="_blank">签约三大韩星：韩都衣舍欲书写互联网品牌的中国时尚传奇</a></li>
+	                        <li><span><a href="http://www.handu.com/news/details/20175.html" target="_blank">[详细内容]</a></span><a href="http://www.handu.com/news/details/20175.html" target="_blank">StarVC为韩都衣舍品牌背书</a></li>
+	                        <li><span><a href="http://www.handu.com/topic-1501.html" target="_blank">[详细内容]</a></span><a href="http://www.handu.com/topic-1501.html" target="_blank">AMH星势力计划—韩国巨星池昌旭签约发布会</a></li>
+	                    </ul>
+					</div>
+				</div>
+
+				<div class="flower_item" style="display: none">
+					<div class="one fl">
+						<h2>
+							<img src="../img/xp.jpg" />
+							<span>韩都衣舍：一个线上品牌的衍变</span>
+						</h2>
+						<ul>
+	                       <li><a href="http://www.handu.com/news/details/22298.html" target="_blank">韩都衣舍：阿米巴炸裂</a></li>
+	                       <li><a href="http://www.handu.com/news/details/21051.html" target="_blank">亲们 字母印花T恤最"韩范儿"</a></li>
+	                       <li><a href="http://www.handu.com/news/details/20922.html" target="_blank">韩都衣舍：走向"设计师孵化平台"</a></li>
+	                        
+	                    </ul>
+					</div>
+					<div class="one fr">
+						<h2>
+							<img src="../img/230_3.jpg" />
+							<span>韩都衣舍赵迎光："站在时尚门外的时尚品牌掌门人"</span>
+						</h2>
+						 <ul>
+	                         <li><a href="http://www.handu.com/news/details/20933.html" target="_blank">赵迎光：把决策力从老板放到员工身上</a></li>
+	                        <li><a href="http://www.handu.com/news/details/18578.html" target="_blank">供应链跟不上互联网？看韩都衣舍怎么做</a></li>
+	                        <li><a href="http://www.handu.com/news/details/20057.html" target="_blank">"迪葵纳"时尚妈妈装稳居天猫第一</a></li>
+	                    </ul>
+					</div>
+				</div>
+
+				<div class="flower_item" style="display: none"s>
+					<div class="two fl">
+						<h2>
+							<a href="">
+								<img src="../img/1.jpg">
+							</a>
+						</h2>
+						<ul>
+	                     	<li><span><a href="http://www.handu.com/news/details/24048.html" target="_blank">[详细内容]</a></span><a href="http://www.handu.com/news/details/24048.html" target="_blank">韩都公益：为汶上县寅寺镇草桥小学学生送礼物</a>
+	                     	</li>
+	                        <li><span><a href="http://www.handu.com/news/details/24083.html" target="_blank">[详细内容]</a></span><a href="http://www.handu.com/news/details/24083.html" target="_blank">韩都公益：点亮求学光源 草桥无穷花开</a>
+	                        </li>
+	                        <li><span><a href="http://www.handu.com/news/details/23308.html" target="_blank">[详细内容]</a></span><a href="http://www.handu.com/news/details/23308.html" target="_blank">筑梦留守儿童"公益项目在山东菏泽启动</a>
+	                        </li>
+		                       
+		                 </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="hd_star over">
+		<h2 class="fl"><a href=""><img src="../img/hd_star.png" alt=""></a></h2>
+		<div class="video fr">
+			<img src="../img/video.png" />
+		</div>
+	</div>
+	
+	<!-- 新品上市 -->
+	<div class="newArrival">
+		<h1>
+			<ul class="newsList">
+				<li class="onb"><a href="">韩风女装</a></li>
+				<li><a href="">甜美少女</a></li>
+				<li><a href="">迪葵纳</a></li>
+				<li><a href="">韩风男装</a></li>
+				<li><a href="">韩风童装</a></li>
+			</ul>
+		</h1>
+	
+		<!-- 韩风女装 -->
+		<ul class="cloth over">
+			<li class="abc">
+				<a href="">
+					<img src="../img/new1.jpg">
+				</a>
+				<!-- <div class="price">
+					<span class="newPrice"><i>￥</i>112</span>
+					<span class="oldPrice">￥1111</span>
+					<a classs="buyBtn">立即抢购</a>
+				</div>	 -->			
+
+			</li>
+			<li><a href="">
+				<img src="../img/new2.jpg">
+
+			</a></li>
+			<li><a href="">
+				<img src="../img/new3.jpg">
+			</a></li>
+			<li><a href="">
+				<img src="../img/new4.jpg">
+			</a></li>
+			<li><a href="">
+				<img src="../img/new5.jpg">
+			</a></li>
+		</ul>
+		<!-- 甜美女装 -->
+		<ul class="cloth over"  style="display: none">
+			<li><a href="">
+				<img src="../img/nana1.jpg">
+			</a></li>
+			<li><a href="">
+				<img src="../img/nana2.jpg">
+			</a></li><li><a href="">
+				<img src="../img/nana3.jpg">
+			</a></li><li><a href="">
+				<img src="../img/nana4.jpg">
+			</a></li><li><a href="">
+				<img src="../img/nana5.jpg">
+			</a></li>
+		</ul>
+		<!-- 迪葵纳 -->
+		<ul class="cloth over" style="display: none">
+			<li><a href="">
+				<img src="../img/o1.jpg">
+			</a></li>
+			<li><a href="">
+				<img src="../img/o2.jpg">
+			</a></li><li><a href="">
+				<img src="../img/o3.jpg">
+			</a></li><li><a href="">
+				<img src="../img/o4.jpg">
+			</a></li>
+			</a></li><li><a href="">
+				<img src="../img/o4.jpg">
+			</a></li>
+		</ul>
+		<!-- 男装 -->
+		<ul class="cloth over" style="display: none">
+			<li><a href="">
+				<img src="../img/man1.jpg">
+			</a></li>
+			<li><a href="">
+				<img src="../img/man2.jpg">
+			</a></li><li><a href="">
+				<img src="../img/man3.jpg">
+			</a></li><li><a href="">
+				<img src="../img/man4.jpg">
+			</a></li>
+			<li><a href="">
+				<img src="../img/man4.jpg">
+			</a></li>
+		</ul>
+		<!-- 童装 -->
+		<ul class="cloth over" style="display: none">
+			<li><a href="">
+				<img src="../img/t1.jpg">
+			</a></li>
+			<li><a href="">
+				<img src="../img/t2.jpg">
+			</a></li><li><a href="">
+				<img src="../img/t3.jpg">
+			</a></li><li><a href="">
+				<img src="../img/t4.jpg">
+			</a></li>
+		</ul>
+	</div>
+
+	<!-- 1F -->
+	<div class="floor" id=""floor1>
+		<h1 class="over">
+			<div class="keywords">
+				<ul>
+					<li>
+						<a href="" clss="active">2017夏装新品</a>
+						<a href="">连衣裙</a>
+						<a href="">针织衫</a>
+						<a href="">卫衣</a>
+						<a href="">裤装</a>
+						<a href="">T恤</a>
+						<a href="">更多&gt;</a>
+					</li>
+				</ul>
+			</div>
+		</h1>
+		<div class="floor_con">
+			<div class="nav_bar">
+				<div class="s_img">
+					<a href="#">
+						<img  src="../img/f1_img.jpg" class="lazy" alt="连衣裙专区" title="连衣裙专区" />
+					</a>
+					<div class="info">连衣裙专区<span class="fr">&gt;</span></div>
+				</div>
+				<div class="s_cate">
+					<a href="category-368-b0.html" title="裙装" target="_blank">裙装</a>
+
+					<a href="category-247-b0.html" title="连衣裙" target="_blank">连衣裙</a>
+
+					<a href="category-240-b0.html" title="毛针织衫" target="_blank">毛针织衫</a>
+
+					<a href="category-249-b0.html" title="牛仔裤" target="_blank">牛仔裤</a>
+
+					<a href="category-241-b0.html" title="卫衣/绒衫" target="_blank">卫衣/绒衫</a>
+
+					<a href="category-10645-b0.html" title="短外套/休闲外套" target="_blank">短外套/休闲外套</a>
+
+					<a href="category-242-b0.html" title="T恤" target="_blank">T恤</a>
+
+					<a href="category-250-b0.html" title="休闲裤" target="_blank">休闲裤</a>
+				</div>
+			</div>
+			
+			<div class="hd_fl fl">
+				<div class="fl_img">
+					<a href="" class="fl site1">
+						<img src="../img/f1_ban.jpg" alt="上新" title="上新">
+					</a>
+					<a href="#" class="fl site2 ">
+						<img  src="../img/f1_img1.png" alt="T-shirt专区" title="连衣裙专区" />
+					</a>
+					<a href="#">
+						<img  src="../img/f1_img2.png" alt="T-雪纺专区" title="连衣裙专区" />
+					</a>
+				</div>
+			</div>
+			
+			<!-- <ul class='hstyle_boxs'>
+				<li class='hstyle_box'>
+          			<a alt='target="_blank'>
+          			<img src="../img/f1_1.jpg" />
+            		</a>
+            		<div class="price">
+						<span class="newPrice"><i>￥</i>112</span>
+						<span class="oldPrice">￥211</span>
+						<a classs="buyBtn">立即抢购</a>
+					</div>
+            	</li> 
+			</ul>-->
+		</div>
+	</div>
 </body>
-</html>
+</html> 
