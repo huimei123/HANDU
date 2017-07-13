@@ -1,0 +1,147 @@
+.pullDList {
+  display: none;
+}
+
+.hd_login {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hd_login .yHeader {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+}
+
+.hd_login .news_login {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.hd_login .news_login .news_loginLeft {
+  padding: 40px 40px 0 0;
+  width: 420px;
+  float: left;
+}
+
+.hd_login .news_login .news_loginRight {
+  border-left: #DDD 1px dashed;
+  padding-left: 80px;
+}
+
+.hd_login .news_login .news_loginRight .login_form {
+  width: 300px;
+  padding: 20px 40px 60px 40px;
+  margin-top: 40px;
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.4);
+  border: 1px solid #EEE;
+  opacity: 0.95;
+  font-size: 14px;
+}
+
+.hd_login .news_login .news_loginRight .login_form .login_title {
+  height: 30px;
+  font-size: 19px;
+  border-bottom: solid 1px #eee;
+  color: #666;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hd_login .news_login .news_loginRight .login_form .form {
+  padding-top: 40px;
+}
+
+.hd_login .news_login .news_loginRight .login_form .form legend {
+  margin: 5px 0;
+}
+
+.hd_login .news_login .news_loginRight .login_form .form legend span {
+  display: inline-block;
+  width: 76px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.hd_login .news_login .news_loginRight .login_form .form legend input {
+  border: 1px solid #dedede;
+  width: 206px;
+  height: 30px;
+}
+
+.hd_login .news_login .news_loginRight .login_form .form .tip {
+  color: #c80a28;
+  position: relative;
+  left: 77px;
+  display: none;
+}
+
+.hd_login .news_login .news_loginRight .login_form .form .log {
+  padding-top: 20px;
+  padding-left: 78px;
+  font-size: 10px;
+  width: 320px;
+  height: 40px;
+}
+
+.hd_login .news_login .news_loginRight .login_form .form .log .login_btn {
+  display: inline-block;
+  background: #BE0929;
+  width: 140px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+  letter-spacing: 1px;
+}
+
+.hd_login .news_login .news_loginRight .login_form .form .log .checkbox {
+  width: 16px;
+  height: 12px;
+}
+
+.hd_login .news_login .news_loginRight .login_form .form .forget {
+  padding-left: 68px;
+}
+
+.hd_login .news_login .news_loginRight .login_form .form .forget a {
+  color: #666;
+  padding: 0 10px;
+  border-right: 1px solid #ddd;
+  text-decoration: underline;
+  font-size: 10px;
+}
+
+.hd_login .news_login .news_loginRight .login_form .form .forget a:last-child {
+  border: none;
+}
+
+.hd_login .news_login .news_loginRight .login_other {
+  padding-top: 20px;
+}
+
+.hd_login .news_login .news_loginRight .login_other .login_other_btn a {
+  display: inline-block;
+  background: url(../img/NEWS_login.png);
+  width: 97px;
+  height: 29px;
+  margin-right: 10px;
+}
+
+.hd_login .news_login .news_loginRight .login_other .login_other_btn .qq {
+  background-position: 0 -528px;
+}
+
+.hd_login .news_login .news_loginRight .login_other .login_other_btn .weibo {
+  background-position: -111px -528px;
+}
+
+.hd_login .news_login .news_loginRight .login_other .login_other_btn .xunlei {
+  background-position: -222px -528px;
+}
+
+.hd_login .news_login .news_loginRight .login_other .login_other_btn .zhifubao {
+  background-position: -333px -528px;
+}

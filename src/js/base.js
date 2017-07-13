@@ -9,6 +9,7 @@ require(['config'],function(){
 				autoplay:true,
 				page:true
 			});
+
 			$('.menber').on('mouseover',function(){
 				$('.hdshow').show();
 			}).on('mouseout',function(){
@@ -18,10 +19,11 @@ require(['config'],function(){
 				$('.message_show').show();
 			}).on('mouseout',function(){
 				$('.message_show').hide();
-			
+			});
+
 
 			// 网站导航
-			var timer;
+			
 			$('.siteMap').on('mouseover',function(){
 				$('.handuBox').show();
 			}).on('mouseout',function(){
@@ -46,25 +48,12 @@ require(['config'],function(){
 					$listImg.eq(i-1).attr('src','../img/'+ i +'.png');
 				})
 			}
-
-			// var html = '';
-			// var randPrice1 = Math.round(Math.random()*600);;
-			// var randPrice2 = randPrice1*2;
-
-			console.log($('.cloth .abc'));
-			//随机生成商品价格
-			// html += `
-			// 		<div class="price">
-			// 			<span class="newPrice"><i>￥</i>${randPrice1}</span>
-			// 			<span class="oldPrice">￥${randPrice2}</span>
-			// 			<a classs="buyBtn">立即抢购</a>
-			// 		</div>	
-			// 	`;
-			// $('.cloth .abc').append(html);
-
+						
 			var list = '';
 			//生成商品信息
 			for(var i = 1 ; i < 8; i++){
+				var randPrice1 = Math.round(Math.random()*600);;
+				var randPrice2 = randPrice1*2;
 
 				list += 
 				`
@@ -74,9 +63,9 @@ require(['config'],function(){
 		          			<img src="../img/f1_${i}.jpg" />
 		            		</a>
 		            		<div class="price">
-								<span class="newPrice"><i>￥</i>112</span>
-								<span class="oldPrice">￥1111</span>
-								<a classs="buyBtn">立即抢购</a>
+								<span class="newPrice"><i>￥</i>${randPrice1}</span>
+								<span class="oldPrice">￥${randPrice2}</span>
+								<a class="buyBtn">立即抢购</a>
 							</div>
 		            	</li>
 		            	
@@ -88,4 +77,3 @@ require(['config'],function(){
 		});
 
 	});
-});

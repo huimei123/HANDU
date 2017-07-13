@@ -1,0 +1,129 @@
+.pullDList{
+	display:none;
+}
+.hd_login{
+	padding-top:20px;
+	padding-bottom:20px;
+	.yHeader{
+		width:1000px;
+		margin:0 auto;
+		position:relative;
+		top:10px;
+	}
+	.news_login{
+		width:1000px;
+		margin:0 auto;
+		.news_loginLeft{
+			padding:40px 40px 0 0 ;
+			width: 420px;
+		    float: left;
+		}
+		.news_loginRight{
+		    border-left: #DDD 1px dashed;
+		    padding-left: 80px;
+		    .login_form{
+		    	width: 300px;
+			    padding: 20px 40px 60px 40px;
+			    margin-top: 40px;
+			    box-shadow: 2px 1px 5px rgba(0,0,0,0.4);
+			    border: 1px solid #EEE;
+			    opacity: 0.95;
+			    font-size: 14px;
+		    	.login_title{
+		    		height: 30px;
+				    font-size: 19px;
+				    border-bottom: solid 1px #eee;
+				    color: #666;
+				    font-size:18px;
+				    font-weight:500;
+		    	}
+		    	.form{
+		    		padding-top:40px;
+		    		legend{
+		    			margin:5px 0;
+		    			span{
+		    				display: inline-block;
+		    				width:76px;
+		    				height:34px;
+		    				line-height: 34px;
+		    			}
+		    			input{
+		    				border: 1px solid #dedede;
+						    width: 206px;
+						    height: 30px;
+		    			}
+
+		    		}
+		    		.tip{
+		    				color:#c80a28;
+		    				position:relative;
+		    				left: 77px;
+		    				display: none;
+		    			}
+		    		.log{
+	    				padding-top:20px;
+	    				padding-left:78px;
+	    				font-size:10px;
+	    				width:320px;
+	    				height:40px;
+	    				.login_btn{
+		    				display: inline-block;
+		    				background: #BE0929;
+						    width: 140px;
+						    height: 35px;
+						    line-height: 35px;
+						    text-align: center;
+						    color: #fff;
+						    border-radius: 2px;
+						    letter-spacing: 1px;
+		    			}
+	    				.checkbox{
+	    					width:16px;
+	    					height:12px;
+	    				}
+	    			}
+	    			.forget{
+	    				padding-left:68px;
+	    				a{
+	    					color:#666;
+	    					padding:0 10px;
+	    					border-right:1px solid #ddd;
+	    					text-decoration: underline;
+	    					font-size:10px;
+	    				}
+	    				a:last-child{
+	    					border:none;
+	    				}
+	    			}
+		    	}
+		    	
+		    }
+		    .login_other{
+		    	padding-top:20px;
+				.login_other_btn{
+					a{
+						display: inline-block;
+						background: url(../img/NEWS_login.png); 
+						width: 97px;
+					    height: 29px;
+					    margin-right: 10px;
+					}
+					.qq{
+						background-position: 0 -528px;
+					   
+					}
+					.weibo{
+						background-position: -111px -528px;
+					}
+					.xunlei{
+						background-position: -222px -528px;
+					}
+					.zhifubao{
+						background-position: -333px -528px;
+					}
+				}
+			}	
+		}
+	}
+}
+

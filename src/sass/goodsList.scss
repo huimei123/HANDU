@@ -1,0 +1,178 @@
+.pullDList{
+	display:none;
+}
+.goods_wrap{
+	padding-top:20px;
+	width:1200px;
+	margin:0 auto;
+	.banner{
+		width: 1200px;
+		img{
+			width: 100%;
+		}
+	}
+	.coupon{
+		width:1200px;
+		margin:0 auto;
+	}
+	.active_prefect{
+		width:1000px;
+		margin:0 auto;
+		ul{
+			li{
+				float:left;
+				padding:10px;
+				>a{
+					display: inline-block;
+					img{
+						
+						width: 230px;
+						height: 230px;
+					}
+				}
+				.infor{
+					font-size:16px;
+					width: 230px;
+					text-align: center;
+				    height: 82px;
+				    padding-top:20px;
+				    .price{
+						.newPrice{
+							font-size:18px;
+    						i{
+    							font-style: normal;
+    							font-size: 16px;margin-right:2px;
+    						}				
+						}
+						.oldPrice{
+							font-size:12px;
+							color:#666;
+							text-decoration: line-through;
+						}
+				    }
+				    .buy{
+				    	display: inline-block;
+				    	position: relative;
+					    top: 6px;
+				    }
+				}
+			}
+		}
+	}
+	.user_show{
+		width:1200px;
+		ul{
+			li{
+				width: 372px;
+				height: 610px;
+			    float: left;
+			    margin: 0 16px 40px 0 ;
+			    text-align: left;
+			    a{
+			    	display: block;
+				    width: 100%;
+				    height: 100%;
+				    float: left;
+				    position: relative;
+				    color: #000;
+				    font-size: 24px;
+				    line-height: 40px;
+				    transition: 0.1s all 0.1s;
+				    .active{
+				    		opacity:0.6;
+				    	}
+				    .top{
+				    	position:relative;
+				    	width: 372px;
+				    	.msk{
+							position: absolute;
+						    z-index: 10;
+						    left: 0;
+						    width: 372px;
+						    height: 30px;
+						    line-height: 30px;
+						    text-align: center;
+						    color: #FFF;
+						    top: -50px;				    
+				    	}
+				    	
+				    	img{
+				    		width: 372px;
+				    		height: 523px;
+				    	}
+				    }
+				    .bottom{
+					    width: 100%;
+					    height: 80px;
+					    padding-top: 20px;
+					    position:absolute;
+					    top: 520px;
+					    b{
+					    	display: block;
+					    }
+				    }
+			    }
+			}
+		}
+	}
+	.hd_bee{
+		    background: #CCC;
+		    height: 600px;
+		    width: 1200px;
+		    position:relative;
+		.hd_bee_img{
+			width: 850px;
+			margin: 0 auto;
+		}
+		.h_bee2017{
+			width: 850px;
+			margin: 0 auto;
+			position:relative;
+			li{
+				width: 130px;
+			   	height: 150px;
+			    float: left;
+			    margin-right: 2px;
+			    position: relative;
+			    transition: 0.5s;
+			    >a{
+			    	display: inline-block;
+			    	i{
+			    		z-index: 10;
+					    display: block;
+					    width: 146px;
+					    height: 162px;
+					    position: absolute;
+					    left: -8px;
+					    top: 4px;
+					    background: url(../img/bee_shadow.png) no-repeat center center;
+					   	display: none;
+					    opacity: 0;
+					    transition: 0.5s;
+			    	}
+			    	img{
+			    		width: 130px;
+			    		height: 150px;
+			    		position:absolute;
+						z-index: 13;
+			    	}
+			    }
+			    // >a:hover{
+			    // 	i{
+			    // 		display: block;
+			    // 		opacity:1;
+			    // 	}
+			    // }
+			}
+		}
+		.two{
+			position: absolute;
+			left: 66px;
+			top: 115px;
+		}
+		.three{
+		   	position: absolute;
+    		top: 230px;
+		}
+	}
+}

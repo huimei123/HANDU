@@ -1,0 +1,187 @@
+.pullDList{
+	display:none;
+}
+.handu_register{
+	width:1100px;
+	height:716px;
+	margin:0 auto;
+	.yHeader{
+		width:1100px;
+		margin:0 auto;
+		position:relative;
+		top:10px;
+	}
+	.hd_register{
+		padding: 40px 0 0 30px;
+		.register_left{
+			.register_left_listName{
+				width: 360px;
+    			line-height: 40px;
+    			a{
+					display: inline-block;
+					width: 103px;
+				    height: 29px;
+				    border: none;
+				    color: #fff;
+				    font-size: 16px;
+				    line-height: 29px;
+				    text-align: center;
+				    letter-spacing: 1px;
+				    margin: 8px 0 0 10px;
+				   	background: #ccc;
+				   	border-radius:2px;
+				}
+			}
+			.crm_module{
+				width: 430px;
+			    height: 97px;
+			    float: left;
+			    margin-top: 8px;
+			    margin-left: -7px;
+			    position: relative;
+			    .by{
+			    	position: absolute;
+				    bottom: 35px;
+				    left: 5px;
+				    input{
+				    	width: 250px;
+					    height: 25px;
+					    border: 1px solid #ddd;
+					    float: left;
+					   	font-size:14px;
+					   	line-height: 20px;
+					    color: #666;
+				    }
+				    button{
+				    	display: block;
+					    width: 70px;
+					    height: 22px;
+					    background: red;
+					    color:#fff;
+					    float: left;
+					    margin: 2px 8px;
+					    border: none;
+					    cursor: pointer;
+					    border-radius:2px;
+				    }
+			    }
+			}
+		}
+
+		.register_right{
+			width: 606px;
+		    border-bottom: #ddd 1px dashed;
+		    height: 120px;
+		    line-height: 50px;
+		    .register_matel{
+		    	.register_num{
+			    	background: url(../img/NEWS_login.png) no-repeat 0 -326px;
+				    width: 22px;
+				    height: 22px;
+				    color: #fff;
+				    float: left;
+				    text-align: center;
+				    line-height: 22px;
+				    margin-top:13px;
+			    }
+			    .register_numName {
+			    	line-height: 50px;
+			    	margin-left: 8px;
+			    }
+			    .register_fs{
+			    	a{
+			    		display: inline-block;
+			    		background: url(../img/NEWS_login.png) no-repeat 0 -102px;
+					    width: 135px;
+					    height: 38px;
+					    border: none;
+					    display: block;
+					    line-height: 32px;
+					    float: left;
+					    text-align: center;
+					    font-size: 14px;
+					    margin-left: 10px;
+					    color:#f00;
+			    	}
+			    	.register_phone{
+			    		background-position: 0 -151px;
+	    				color: #393939;
+			    	}
+			    	.active{
+			    		@extend .register_phone;
+			    	}
+			    }
+		    }
+			.ter_regisinfor{
+				padding-top:84px;
+				.register_num{
+					background: url(../img/NEWS_login.png) no-repeat 0 -326px;
+				    width: 22px;
+				    height: 22px;
+				    color: #fff;
+				    float: left;
+				    text-align: center;
+				    line-height: 22px;
+				    margin-top:13px;
+				}
+				legend{
+					padding-left:30px;
+					.emailTip{
+						width: 116px;
+    					color: #bf0000;
+    					display: none;
+					}
+					.passwdTip1{
+						@extend .emailTip;
+					}
+					.passwdTip2{
+						@extend .passwdTip1;
+					}
+					.passwdTip3{
+						display: none;
+					    position: relative;
+					    left: 63px;
+					    font-style:normal;
+					    color: #bf0000;
+					}
+					span{
+						display: inline-block;
+						width: 54px;
+						position:relative;
+						right:0;
+					}
+					input{
+						background: url(../img/shopping_login.png) no-repeat -0 -182px;
+					    width: 210px;
+					    height: 33px;
+					    border: none;
+					    text-indent: 5px;
+					    line-height: 33px;
+					}
+					p{
+						position: relative;
+   						 left: 56px;
+   						 color:#666;
+					}
+				}
+				.checkbox{
+				    position: relative;
+					left: 89px;
+				}
+				.agree{
+					display: inline-block;
+					background: url(../img/NEWS_login.png) no-repeat 0 -51px;
+				    width: 171px;
+				    height: 43px;
+				    text-align: center;
+				    font-size: 18px;
+				    color: #fff;
+				    position:relative;
+				    left: 89px;
+				    cursor: pointer;
+				}	
+			}
+			
+		}
+	}
+}

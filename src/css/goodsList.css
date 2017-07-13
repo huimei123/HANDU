@@ -1,0 +1,196 @@
+.pullDList {
+  display: none;
+}
+
+.goods_wrap {
+  padding-top: 20px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.goods_wrap .banner {
+  width: 1200px;
+}
+
+.goods_wrap .banner img {
+  width: 100%;
+}
+
+.goods_wrap .coupon {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.goods_wrap .active_prefect {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.goods_wrap .active_prefect ul li {
+  float: left;
+  padding: 10px;
+}
+
+.goods_wrap .active_prefect ul li > a {
+  display: inline-block;
+}
+
+.goods_wrap .active_prefect ul li > a img {
+  width: 230px;
+  height: 230px;
+}
+
+.goods_wrap .active_prefect ul li .infor {
+  font-size: 16px;
+  width: 230px;
+  text-align: center;
+  height: 82px;
+  padding-top: 20px;
+}
+
+.goods_wrap .active_prefect ul li .infor .price .newPrice {
+  font-size: 18px;
+}
+
+.goods_wrap .active_prefect ul li .infor .price .newPrice i {
+  font-style: normal;
+  font-size: 16px;
+  margin-right: 2px;
+}
+
+.goods_wrap .active_prefect ul li .infor .price .oldPrice {
+  font-size: 12px;
+  color: #666;
+  text-decoration: line-through;
+}
+
+.goods_wrap .active_prefect ul li .infor .buy {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+}
+
+.goods_wrap .user_show {
+  width: 1200px;
+}
+
+.goods_wrap .user_show ul li {
+  width: 372px;
+  height: 610px;
+  float: left;
+  margin: 0 16px 40px 0;
+  text-align: left;
+}
+
+.goods_wrap .user_show ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  float: left;
+  position: relative;
+  color: #000;
+  font-size: 24px;
+  line-height: 40px;
+  transition: 0.1s all 0.1s;
+}
+
+.goods_wrap .user_show ul li a .active {
+  opacity: 0.6;
+}
+
+.goods_wrap .user_show ul li a .top {
+  position: relative;
+  width: 372px;
+}
+
+.goods_wrap .user_show ul li a .top .msk {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  width: 372px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFF;
+  top: -50px;
+}
+
+.goods_wrap .user_show ul li a .top img {
+  width: 372px;
+  height: 523px;
+}
+
+.goods_wrap .user_show ul li a .bottom {
+  width: 100%;
+  height: 80px;
+  padding-top: 20px;
+  position: absolute;
+  top: 520px;
+}
+
+.goods_wrap .user_show ul li a .bottom b {
+  display: block;
+}
+
+.goods_wrap .hd_bee {
+  background: #CCC;
+  height: 600px;
+  width: 1200px;
+  position: relative;
+}
+
+.goods_wrap .hd_bee .hd_bee_img {
+  width: 850px;
+  margin: 0 auto;
+}
+
+.goods_wrap .hd_bee .h_bee2017 {
+  width: 850px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.goods_wrap .hd_bee .h_bee2017 li {
+  width: 130px;
+  height: 150px;
+  float: left;
+  margin-right: 2px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.goods_wrap .hd_bee .h_bee2017 li > a {
+  display: inline-block;
+}
+
+.goods_wrap .hd_bee .h_bee2017 li > a i {
+  z-index: 10;
+  display: block;
+  width: 146px;
+  height: 162px;
+  position: absolute;
+  left: -8px;
+  top: 4px;
+  background: url(../img/bee_shadow.png) no-repeat center center;
+  display: none;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.goods_wrap .hd_bee .h_bee2017 li > a img {
+  width: 130px;
+  height: 150px;
+  position: absolute;
+  z-index: 13;
+}
+
+.goods_wrap .hd_bee .two {
+  position: absolute;
+  left: 66px;
+  top: 115px;
+}
+
+.goods_wrap .hd_bee .three {
+  position: absolute;
+  top: 230px;
+}

@@ -2,8 +2,12 @@ require.config({
 	paths:{
 		jquery:'../lib/jquery-3.1.1',
 		hmCarousel:'../lib/hmCarousel/jquery.hmCarousel',
+		hmZoom:'../lib/jquery.hmZoom/jquery.hmZoom',
+		hmShake:'../lib/hmShake',
 	},
 	shim:{
 		hmCarousel:['jquery'],
+		hmZoom:['jquery'],
+		hmShake:['jquery'],
 	}
-})
+});

@@ -1,0 +1,246 @@
+.pullDList{
+	display:none;
+}
+.detail_wrap{
+	width:1200px;
+	margin:0 auto;
+	padding:30px 0px;
+	.pos{
+		font-size:12px;
+		a{
+			color:#000;
+			padding:0 8px;
+
+		}
+	}
+	.detail_top{
+		padding-top:30px;
+		.gallery{
+			width: 482px;
+			.zoomPad{
+				width: 482px;
+				height: 482px;
+				img{
+					width:480px;
+					height:480px;
+					border:1px solid #ddd;
+				}
+			}
+			.active{
+					border: 1px solid #f00;
+				}
+			.gallery_nav{
+				padding-top:10px;
+				width: 100%;
+				margin: 0 auto;
+				position:relative;
+				left: 46px;;
+				
+				
+				a{	position:relative;
+					display: inline-block;
+					margin:5px;
+					padding:1px;
+					img{
+						width: 70px;
+						height: 70px;
+					}
+					span{
+						margin-top: -16px;
+					    margin-left: 40%;
+					    display: none;
+					    width: 0;
+					    height: 0;
+					    font-size: 0;
+					    border-width: 8px;
+					    border-style: solid;
+					    border-color: transparent transparent #c80a28 transparent;
+					    position: absolute;
+					    z-index: 1;
+					    top: -1px;
+					}
+				}
+			}
+		}
+	}
+	.goods_details{
+		width:500px;
+		padding:10px 5px;
+		border:1px solid #ddd;
+		margin-left: 20px;
+		padding-left:20px;
+		.goods_details1{
+			h1{
+			padding-bottom: 10px;
+		    font-size:14px;
+		   	line-height: 24px;
+			}
+			ul{
+				border-bottom:1px solid #ddd;
+				li{
+					color:#666;
+					font-size:12px;
+					line-height: 24px;
+					padding:5px 0;
+					.code{
+						padding:0 20px;
+					}
+					.oldprice{
+						font-weight:bold;
+						color:#666;
+						text-decoration : line-through;
+					}
+					.sale{
+						color: #c80a28;
+					   	font-size:20px;
+					    padding: 4px 0;
+					}
+					.acura{
+						@extend .code;
+					}
+					.star{
+					    display: inline-block;
+					    width: 74px;
+					    height: 12px;
+					    background: url(../img/star-s.png) 0 -17px no-repeat;
+					}
+				}
+			}
+		}
+		.goods_details2{
+			ul{
+				li{
+					float:left;
+					height: 24px;
+				    line-height: 24px;
+				    width: 54px;
+				    text-align: center;
+				  	border:1px solid #ddd;
+				  	margin: 0 8px;
+				}
+				.active1{
+					border:1px solid red;
+					background:url(../img/selected.png) no-repeat 38px 8px;
+				}
+				.active2{
+					@extend .active1;
+				}
+			}
+			.details_size{
+				padding:10px 0;
+				
+				.size{
+					color:#666;
+					line-height: 24px;
+					display: inline-block;
+				}
+			}
+		}
+		.goods_details3{
+			padding-top:20px;
+			border-bottom:1px solid #ddd;
+			.set{
+				.acount{
+					padding-left:20px;
+					height: 30px;
+					.sub{
+						display: inline-block;
+						width: 12px;
+					    height: 12px;
+					    line-height: 10px;
+					    text-align: center;
+					    overflow: hidden;
+					    cursor: pointer;
+					    border: 1px solid #9A9A9A;
+					    margin:0 2px;
+					    cursor: pointer;
+					}
+					.plus{
+						@extend .sub;
+					}
+					input{
+						width: 70px;
+						height: 26px;
+						line-height: 26px;
+						text-align: center;
+						color: #333;
+						border: 1px solid #DDD;
+					}
+
+				}
+				.repertory{
+					display: inline-block;
+    				height: 30px;
+					padding:5px 0 0 10px;
+				}
+				.select{
+					color:red;
+				}
+				
+			}
+			.btn_set{
+				padding-top:10px;
+				a{
+					width: 160px;
+				    height: 43px;
+				    display: inline-block;
+				    margin-bottom: 15px;
+				    margin-right: 20px;
+				}
+				.buy-btn{
+					background:url(../img/detail_buy.png);
+				}
+				.addCart{
+					background:url(../img/detail_addcart.png);
+				}
+			}
+		}
+		.extra_info{
+			padding-top:20px;
+			.qqonline{
+				position: relative;
+	    		width: 107px;
+				.online{
+					position: absolute;
+				    right: 30px;
+				    top: 0px;
+				    width: 13px;
+				    height: 13px;
+					background: url(../img/goods_details.png) no-repeat -63px -136px;
+				}
+			}
+			.et_weixin{
+				position: relative;
+    			width: 165px;
+    			.weixin{
+    				position: absolute;
+				    top: 0px;
+				    right: 90px;
+				    display: block;
+				    width: 16px;
+				    height: 16px;
+				    background: url(../img/weixin.png) no-repeat;
+    				display: inline-block;
+    			}
+    			.sys{
+    				display: inline-block;
+    				position:absolute;
+    				left: 85px;
+    				top: -10px;
+    			}
+			}
+		}
+		.goods_payway{
+			padding-top:10px;
+			a{
+				color:#666;
+			}
+			span{
+				display: inline-block;
+				img{
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
