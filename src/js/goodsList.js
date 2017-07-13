@@ -78,14 +78,11 @@ require(['config'],function(){
 						$ul.appendTo($div);
 						
 						var htmlList = '';
-						/* 控制图片的路径 
-						list_pic1_1,list_pic1_2.....list_pic2_1....list_pic5_19
-						以此类推
-						*/
+						
 						for(var j = 0 ; j < 19 ; j++){
 							htmlList += `
-								<li>
-									<a href="./detail.html"><img src="${data[j].img}"/></a>
+								<li data-guidId="${data[j].id}">
+									<a href="./detail.html?id=${data[j].id}"><img src="${data[j].img}"/></a>
 									<div class="infor">
 										<p class="price">
 											<span class="newPrice"><i>￥</i>${data[j].newPrice}</span>
