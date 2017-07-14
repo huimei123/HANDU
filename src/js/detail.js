@@ -1,10 +1,42 @@
 require(['config'],function(){
 	require(['jquery','hmZoom'],function($){
-		$('.zoomPad').hmZoom({
-			width:480,
-			height: 480,
-			position:'right',
-			gap: 15,
+		
+		//插入头部
+		$('<div/>').load('./base.html',function(){
+			$(this).insertBefore('.detail_wrap');
+
+			$('.pullDTitle').on('mouseover',function(){
+				$('.pullDList').show();
+			}).on('mouseout',function(){
+				$('.pullDList').hide();
+			});
+			
+
+			$('.menber').on('mouseover',function(){
+				$('.hdshow').show();
+			}).on('mouseout',function(){
+				$('.hdshow').hide();
+			});
+			$('.message').on('mouseover',function(){
+				$('.message_show').show();
+			}).on('mouseout',function(){
+				$('.message_show').hide();
+				});
+
+			// 网站导航
+			var timer;
+			$('.siteMap').on('mouseover',function(){
+				$('.handuBox').show();
+			}).on('mouseout',function(){
+
+				$('.handuBox').hide();
+			});
+			$('.handuBox').on('mouseover',function(){
+				$('.handuBox').show();
+			}).on('mouseout',function(){
+				$('.handuBox').hide();
+			});
+
 		});
 
 

@@ -1,5 +1,8 @@
 require(['config'],function(){
 	require(['jquery'],function($){
+
+		
+
 		//获取URL的参数值
 		function getUrlParams(key){
 			var params = location.search.slice(1).split('&');
