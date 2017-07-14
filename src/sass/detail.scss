@@ -90,6 +90,10 @@
 						color:#666;
 						text-decoration : line-through;
 					}
+					.RMB{
+						color: #c80a28;
+					   	font-size:20px;
+					}
 					.sale{
 						color: #c80a28;
 					   	font-size:20px;
@@ -244,3 +248,64 @@
 		}
 	}
 }
+
+
+.goods_buy{
+	width: 430px;
+	height: 300px;
+    border: #dddddd 8px solid;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    margin:auto;
+    background:#fff;
+    padding:15px;
+    display: none;
+    .goods_buy_top{
+    	padding-bottom:20px;
+    	border-bottom:1px dotted #ccc;
+    	p:nth-of-type(1){
+    	line-height: 30px;
+    	height:30px;
+    	font-size:14px;
+	    }
+		p:nth-of-type(2){
+			a{
+				display: inline-block;
+				margin-right: 10px;
+			}
+		}
+    }
+   	.goods_recommend{
+   		padding-top:10px;
+   		p:nth-of-type(1){
+   			color:#7b7b7b;
+   			line-height: 24px;
+   		}
+   		a{
+   			display: block;
+   			img{
+   				width: 84px;
+   				height: 84px;
+   			}
+   		}
+   		.de{
+   			width: 84px;
+   			color: #7b7b7b;
+		    text-align: left;
+		    line-height: 18px;
+		    height: 18px;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		    margin-top: 5px;
+   		}
+   		.price{
+   			color: #c80a28;
+   		}
+   	}
+    
+}
+

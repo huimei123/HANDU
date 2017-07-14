@@ -34,17 +34,37 @@ require(['config'],function(){
 			success:function(res){
 				var data = JSON.parse(res);
 				console.log(data);
-				var img = data[0].img;
-				console.log(img);
-			},
+				var imgUrl = data[0].img;
+				var newPrice = data[0].newPrice;
+				var oldPrice = data[0].oldPrice;
+				var description = data[0].description;
+				
+				var img = $('.zoomPad img');
+				img.attr({
+					src : imgUrl,
+					'data-big': imgUrl,
+				});
+				$('.zoomPad').hmZoom({
+					width:480,
+					height: 480,
+					position:'right',
+					gap: 15,
+				});
+
+				$('.sale').text(newPrice);
+				$('.oldPrice').text(oldPrice);
+				$('.product_name').text(description);
+
+
+				$('.pay').on('click',function(e){
+					e.preventDefault();
+					location.href = `./shoppCart.html?id=${data[0].id}`;
+				})
+
+			}
 		});
 
-		//根据接收的数据生成大图
-		//<div class="zoomPad">
-		// 	<img src="../img/big0.jpg" data-big="../img/big0.jpg" />
-		// </div>
-
-		// var zoomPad 
+		console.log($('.pay'));
 
 		var $bigImg = $('.zoomPad img');
 		
@@ -90,7 +110,7 @@ require(['config'],function(){
 
 
 		//改变数量
-		var count = 1; console.log($('.sub'));
+		var count = 1;
 		$('.plus').on('click',function(){
 			count ++;
 			console.log(count);
@@ -102,6 +122,13 @@ require(['config'],function(){
 				count = 0;
 			}
 			$('.amount').attr('value',count);
-		})
+		});
+
+		console.log($('.buy-btn'))
+		$('.addCart').on('click',function(e){
+			e.preventDefault();
+			console.log(666);
+			$('.goods_buy').show();
+		});
 	});
 });

@@ -110,6 +110,11 @@
   text-decoration: line-through;
 }
 
+.detail_wrap .goods_details .goods_details1 ul li .RMB {
+  color: #c80a28;
+  font-size: 20px;
+}
+
 .detail_wrap .goods_details .goods_details1 ul li .sale {
   color: #c80a28;
   font-size: 20px;
@@ -265,4 +270,69 @@
 
 .detail_wrap .goods_details .goods_payway span img {
   display: inline-block;
+}
+
+.goods_buy {
+  width: 430px;
+  height: 300px;
+  border: #dddddd 8px solid;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  padding: 15px;
+  display: none;
+}
+
+.goods_buy .goods_buy_top {
+  padding-bottom: 20px;
+  border-bottom: 1px dotted #ccc;
+}
+
+.goods_buy .goods_buy_top p:nth-of-type(1) {
+  line-height: 30px;
+  height: 30px;
+  font-size: 14px;
+}
+
+.goods_buy .goods_buy_top p:nth-of-type(2) a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.goods_buy .goods_recommend {
+  padding-top: 10px;
+}
+
+.goods_buy .goods_recommend p:nth-of-type(1) {
+  color: #7b7b7b;
+  line-height: 24px;
+}
+
+.goods_buy .goods_recommend a {
+  display: block;
+}
+
+.goods_buy .goods_recommend a img {
+  width: 84px;
+  height: 84px;
+}
+
+.goods_buy .goods_recommend .de {
+  width: 84px;
+  color: #7b7b7b;
+  text-align: left;
+  line-height: 18px;
+  height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 5px;
+}
+
+.goods_buy .goods_recommend .price {
+  color: #c80a28;
 }

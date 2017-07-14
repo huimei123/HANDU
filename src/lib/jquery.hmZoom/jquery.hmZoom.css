@@ -1,5 +1,5 @@
 .hm-zoom{position:relative;width:300px;overflow:hidden;}
 .hm-zoom img{display:block;}
 .hm-zoom .minzoom{ cursor: crosshair; display:none;position: absolute;border:1px solid #ccc;background-color:#fff;background-color: rgba(255,255,255,.3);filter:alpha(Opacity=30);}
-.hm-bigzoom{display:none;position: absolute;width:482px;height:482px;overflow:hidden; border: 1px solid #ddd;}
-.hm-bigzoom img{position: absolute;left:0;right:0;}
+.hm-bigzoom{display:none;position: absolute;z-index:100;width:482px;height:482px;overflow:hidden; border: 1px solid #ddd;}
+.hm-bigzoom img{position: absolute;left:0;right:0; z-index: 100; width: 800px;height: 800px;}
