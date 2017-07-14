@@ -56,6 +56,12 @@ require(['config'],function(){
 		var getId = getUrlParams('id');
 		console.log(getId);
 
+		var guid;
+		var data;
+		var imgUrl;
+		var newPrice;
+		var oldPrice;
+		var description;
 
 		//发送请求
 		$.ajax({
@@ -64,12 +70,13 @@ require(['config'],function(){
 				id:getId,
 			},
 			success:function(res){
-				var data = JSON.parse(res);
+				data = JSON.parse(res);
 				console.log(data);
-				var imgUrl = data[0].img;
-				var newPrice = data[0].newPrice;
-				var oldPrice = data[0].oldPrice;
-				var description = data[0].description;
+				guid = data[0].id;
+				imgUrl = data[0].img;
+				newPrice = data[0].newPrice;
+				oldPrice = data[0].oldPrice;
+				description = data[0].description;
 				
 				var img = $('.zoomPad img');
 				img.attr({
@@ -91,7 +98,9 @@ require(['config'],function(){
 				$('.pay').on('click',function(e){
 					e.preventDefault();
 					location.href = `./shoppCart.html?id=${data[0].id}`;
-				})
+				});
+
+				
 
 			}
 		});
@@ -156,11 +165,40 @@ require(['config'],function(){
 			$('.amount').attr('value',count);
 		});
 
-		console.log($('.buy-btn'))
+
+		// 先获取cookie中的值
+		var cartBox = getCookie('cartBox');
+
+		// 如果没有cookie，则赋值空数组
+		// 有cookie就转换成对象
+		if(cartBox.length>0){
+			cartBox = JSON.parse(cartBox);
+		}else{
+			cartBox = [];
+		}
+
 		$('.addCart').on('click',function(e){
 			e.preventDefault();
-			console.log(666);
+			//添加到cookie
+			var item = {
+				guid : guid,
+				imgUrl : imgUrl,
+				newPrice : newPrice,
+				oldPrice : oldPrice,
+				description: description,
+			}
+
+			//往商品列表中添加当前商品信息
+			cartBox.push(item);
+
+			var now = new Date();
+			now.setDate(now.getDate()+7);
+
+			setCookie('cartBox',decodeURI(JSON.stringify(cartBox)),now);
+
 			$('.goods_buy').show();
 		});
+
+
 	});
 });
