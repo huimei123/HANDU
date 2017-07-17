@@ -63,17 +63,18 @@
   width: 186px;
 }
 
-.cart .cartGoodsList {
-  padding-left: 14px 0;
-  border: 1px solid #ddd;
-  padding-left: 10px;
-}
-
-.cart .cartGoodsList h3 {
-  height: 40px;
+.cart .h3 {
+  padding-left: 14px;
+  height: 60px;
   line-height: 55px;
   width: 1186px;
   color: #333433;
+}
+
+.cart .cartGoodsList {
+  padding-left: 14px;
+  border: 1px solid #ddd;
+  padding-left: 10px;
 }
 
 .cart .cartGoodsList .brand_cart {
@@ -152,7 +153,8 @@
   cursor: pointer;
 }
 
-.cart .cartGoodsList .brand_number input {
+.cart .cartGoodsList .brand_number .amount {
+  display: inline-block;
   width: 60px;
   height: 26px;
   line-height: 26px;

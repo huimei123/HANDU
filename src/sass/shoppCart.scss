@@ -55,16 +55,18 @@
 		}
 
 	}
+	.h3{
+		padding-left:14px;
+		height:60px;
+		line-height:55px;
+
+		width:1186px;
+		color:rgb(51,52,51);
+		}
 	.cartGoodsList{
-		padding-left:14px 0;
+		padding-left:14px;
 		border:1px solid #ddd;
 		padding-left:10px;
-		h3{
-			height:40px;
-			line-height:55px;
-			width:1186px;
-			color:rgb(51,52,51);
-		}
 		.brand_cart{
 			width: 368px;
 			height: 134px;
@@ -136,7 +138,8 @@
 			.plus{
 				@extend .sub;
 			}
-			input{
+			.amount{
+				display: inline-block;
 				width: 60px;
 				height: 26px;
 				line-height: 26px;

@@ -54,7 +54,6 @@ require(['config'],function(){
 		}
 
 		var getId = getUrlParams('id');
-		console.log(getId);
 
 		var guid;
 		var data;
@@ -62,6 +61,7 @@ require(['config'],function(){
 		var newPrice;
 		var oldPrice;
 		var description;
+		var currentsGoods ;
 
 		//发送请求
 		$.ajax({
@@ -72,16 +72,19 @@ require(['config'],function(){
 			success:function(res){
 				data = JSON.parse(res);
 				console.log(data);
-				guid = data[0].id;
-				imgUrl = data[0].img;
-				newPrice = data[0].newPrice;
-				oldPrice = data[0].oldPrice;
-				description = data[0].description;
 				
+				currentsGoods = {
+					guid : data[0].id,
+					imgUrl : data[0].img,
+					newPrice : data[0].newPrice,
+					oldPrice : data[0].oldPrice,
+					description : data[0].description,
+					qty:1
+				}
 				var img = $('.zoomPad img');
 				img.attr({
-					src : imgUrl,
-					'data-big': imgUrl,
+					src : currentsGoods.imgUrl,
+					'data-big': currentsGoods.imgUrl,
 				});
 				$('.zoomPad').hmZoom({
 					width:480,
@@ -90,14 +93,14 @@ require(['config'],function(){
 					gap: 15,
 				});
 
-				$('.sale').text(newPrice);
-				$('.oldPrice').text(oldPrice);
-				$('.product_name').text(description);
+				$('.sale').text(currentsGoods.newPrice);
+				$('.oldPrice').text(currentsGoods.oldPrice);
+				$('.product_name').text(currentsGoods.description);
 
 
 				$('.pay').on('click',function(e){
 					e.preventDefault();
-					location.href = `./shoppCart.html?id=${data[0].id}`;
+					location.href = `./shoppCart.html`;
 				});
 
 				
@@ -105,7 +108,6 @@ require(['config'],function(){
 			}
 		});
 
-		console.log($('.pay'));
 
 		var $bigImg = $('.zoomPad img');
 		
@@ -152,48 +154,54 @@ require(['config'],function(){
 
 		//改变数量
 		var count = 1;
+
 		$('.plus').on('click',function(){
 			count ++;
-			console.log(count);
-			$('.amount').attr('value',count);
+			$('.amount1').text(count);
+			
 		});
 		$('.sub').on('click',function(){
 			count --;
 			if(count <= 0){
 				count = 0;
 			}
-			$('.amount').attr('value',count);
+			$('.amount1').text(count);
 		});
 
-
-		// 先获取cookie中的值
-		var cartBox = getCookie('cartBox');
-
-		// 如果没有cookie，则赋值空数组
-		// 有cookie就转换成对象
-		if(cartBox.length>0){
-			cartBox = JSON.parse(cartBox);
-		}else{
-			cartBox = [];
-		}
-
+		
 		$('.addCart').on('click',function(e){
 			e.preventDefault();
-			//添加到cookie
-			var item = {
-				guid : guid,
-				imgUrl : imgUrl,
-				newPrice : newPrice,
-				oldPrice : oldPrice,
-				description: description,
+			console.log(count);
+			currentsGoods.qty = count;
+			
+			// 先获取cookie中的值
+			var cartBox = getCookie('cartBox');
+			console.log(cartBox);
+
+			// 如果没有cookie，则赋值空数组
+			// 有cookie就转换成对象
+			if(cartBox.length>0){
+				cartBox = JSON.parse(cartBox);
+			}else{
+				cartBox = [];
 			}
 
-			//往商品列表中添加当前商品信息
-			cartBox.push(item);
+			//去重
+			cartBox.forEach(function(item,idx){
+				if(item.guid == currentsGoods.guid){
+					cartBox.splice(idx,1);
+					currentsGoods.qty += item.qty;
+				}
+			});
+			cartBox.unshift(currentsGoods);
+			
 
+
+			// 7天有效期
 			var now = new Date();
 			now.setDate(now.getDate()+7);
 
+			// 写入cookie
 			setCookie('cartBox',decodeURI(JSON.stringify(cartBox)),now);
 
 			$('.goods_buy').show();

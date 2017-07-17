@@ -167,18 +167,19 @@
   display: inline-block;
   width: 12px;
   height: 12px;
-  line-height: 10px;
+  line-height: 12px;
   text-align: center;
   overflow: hidden;
   cursor: pointer;
   border: 1px solid #9A9A9A;
-  margin: 0 2px;
   cursor: pointer;
 }
 
-.detail_wrap .goods_details .goods_details3 .set .acount input {
+.detail_wrap .goods_details .goods_details3 .set .acount .amount1 {
+  display: inline-block;
   width: 70px;
   height: 26px;
+  font-size: 12px;
   line-height: 26px;
   text-align: center;
   color: #333;

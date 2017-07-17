@@ -60,12 +60,11 @@ require(['config'],function(){
 				})
 			}
 			
-			
+			//生成商品信息 6层ul 每个ul 里面有5个li
 			for(var i = 1 ; i <= 6; i ++){
 				var goodslist = '';
 				//生成商品信息
 				for(var j = 1; j <= 5; j++ ){
-
 					var randPrice1 = Math.round(Math.random()*600);;
 					var randPrice2 = randPrice1*2;
 					goodslist += `
